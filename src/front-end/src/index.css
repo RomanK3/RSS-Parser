@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+select {
+  font-size: larger;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+}
+
+header h1 {
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.welcome {
+  display: flex;
+  gap: 20px;
+}
+
+.welcome-link {
+  color: #6666ff;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.welcome button {
+  padding: 14px 20px;
+  font-size: 16px;
+  background-color: #97bcff;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+.Home {
+  padding-top: 70px;
+}
+
+.Home-block {
+  max-width: 90%;
+  margin: auto;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search h2 {
+  font-size: x-large;
+}
+
+.search-bar {
+  padding: 10px 15px;
+  background: gainsboro;
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+.search-buttons,
+.post-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-buttons button {
+  padding: 7px 13px;
+  color: white;
+  font-size: 15px;
+  background-color: #696969;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.sort {
+  padding: 20px 0;
+}
+
+.Posts,
+.create-post {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.Posts h2 {
+  font-size: x-large;
+  text-align: center;
+}
+
+.Posts-block {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.post {
+  margin: 20px 0;
+  border: 1px solid #4696d5;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.post img {
+  border-radius: 10px;
+  width: 100%;
+  max-height: 350px;
+}
+
+.post a {
+  font-size: 22px;
+  color: darkblue;
+}
+
+.post p {
+  font-size: large;
+}
+
+.post p input {
+  padding-left: 10px;
+  font-size: large;
+  border-bottom: 1px solid black;
+}
+
+.post-desc {
+  padding: 10px 0;
+}
+
+.post-edit-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.post-buttons button,
+.post-edit-buttons button {
+  padding: 7px 13px;
+  color: white;
+  font-size: 15px;
+  background-color: #609ac7;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.post-desc-author {
+  font-size: large;
+  padding: 7px 0;
+}
+
+.publicationDate {
+  font-size: larger;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  font-size: larger;
+  background-color: darkgray;
+}
+
+.pagination div {
+  display: flex;
+  gap: 8px;
+}
+
+.login-block {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper h2 {
+  font-size: x-large;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.login-wrapper form {
+  font-size: large;
+}
+
+.login-wrapper form div,
+.create-post-block div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 5px 0;
+  justify-content: flex-end;
+}
+
+.login-wrapper form div input,
+.create-post-block div input {
+  border: 1px solid;
+  font-size: large;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.login-wrapper form button,
+.create-post-block button {
+  padding: 7px 13px;
+  color: white;
+  font-size: 15px;
+  background-color: #434343;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.register {
+  padding-top: 25px;
+}
+
+.create-post {
+  height: calc(100vh - 80px);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.create-post h2 {
+  font-size: x-large;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.create-post-block {
+  font-size: large;
+}
+
+.create-post-btn-block button {
+  margin-top: 25px;
+}
