@@ -36,7 +36,7 @@ Then you can start the Back-end part:
 
 ## Pages
 
-"/home" - Home Page
+"/" - Home Page
 
 "/admin" - Admin Page
 
