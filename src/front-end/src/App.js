@@ -18,7 +18,7 @@ const App = () => {
                 <Route element={<ProtectedRouteAdmin />}>
                   <Route path="/admin" element={<AdminUI />} />
                 </Route>
-                <Route index path="/home" element={<Home />} />
+                <Route index path="/" element={<Home />} />
               </Route>
               <Route path="/login" element={<Login />} />
               <Route path="*" element={<p>Path not resolved</p>} />

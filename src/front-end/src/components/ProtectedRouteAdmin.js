@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from "react-router-dom";
 import { useAuth } from "./useAuth";
 
-const ProtectedRouteAdmin = ({ redirectPath = "/home" }) => {
+const ProtectedRouteAdmin = ({ redirectPath = "/" }) => {
   const auth = useAuth();
 
   if (!auth.token) {

@@ -18,7 +18,7 @@ const Layout = () => {
   };
 
   const handleRedirectToHome = () => {
-    navigate("/home");
+    navigate("/");
   };
 
   return (

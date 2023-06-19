@@ -8,13 +8,13 @@ function useProvideAuth() {
 
   const signIn = (token) => {
     localStorage.setItem("token", token);
-    navigate("/home", { replace: true });
+    navigate("/", { replace: true });
   };
 
   const signOut = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
-    navigate("/home", { replace: true });
+    navigate("/", { replace: true });
   };
 
   return {
